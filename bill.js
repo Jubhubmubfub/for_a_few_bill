@@ -5,6 +5,24 @@
 // how many days until 1 billion?
 // how many days until inifinity?
 
-var reward = 1;
-
-for ()
+var reward = .005;
+// var day = 1;
+// while (day < 31){
+//   if (reward > 10000){
+//     console.log("You've already got more than $10k on day " + day + "1!");
+//     reward*=2;
+//     continue;
+//   }
+//   reward *= 2;
+//   console.log("Day " + day + ": $" + reward );
+//   day++;
+// }
+var x = 0;
+for (var day = 1; day < 31; day++){
+  if (reward >= 10000 && x === 0){
+    console.log("You've made over $10,000 by day " + (day-1)  + "!");
+    x++;
+  }
+  reward *= 2;
+  console.log("Day " + day + ": $" + reward)
+}
